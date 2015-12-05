@@ -33,7 +33,6 @@ Settings.theme = 'Official_-_Dark_theme';
 Settings.ratingStars = true; //trigger on click in details
 Settings.startScreen = 'Movies';
 Settings.lastTab = '';
-Settings.rememberFilters = false;
 
 // Quality
 Settings.shows_default_quality = '720p';
@@ -66,12 +65,6 @@ Settings.traktPlayback = true;
 // TVShow Time
 Settings.tvstAccessToken = '';
 
-// OpenSubtitles
-Settings.opensubtitlesAutoUpload = true;
-Settings.opensubtitlesAuthenticated = false;
-Settings.opensubtitlesUsername = '';
-Settings.opensubtitlesPassword = '';
-
 // Advanced options
 Settings.connectionLimit = 100;
 Settings.dhtLimit = 500;
@@ -101,20 +94,20 @@ Settings.vpnUsername = '';
 Settings.vpnPassword = '';
 
 Settings.tvAPI = [{
-    url: 'https://eztvapi.re/',
+    url: 'https://odgoglfi7uddahby.onion.to/',
     strictSSL: true
-}, {
+}/*, {
     url: 'https://api.popcorntime.io/',
     strictSSL: true
 }, {
     url: 'http://tv.ytspt.re/',
     strictSSL: false
-}];
+}*/];
 
 Settings.ytsAPI = [{
-    uri: 'https://yts.to/',
-    strictSSL: true
-}, {
+    uri: 'http://api.torrentsapi.com/',
+    strictSSL: false
+}/*, {
     uri: 'https://cloudflare.com/',
     headers: {
         'Host': 'xor.image.yt',
@@ -128,7 +121,7 @@ Settings.ytsAPI = [{
         'User-Agent': 'Mozilla/5.0 (Linux) AppleWebkit/534.30 (KHTML, like Gecko) PT/3.8.0'
     },
     strictSSL: false
-}];
+}*/];
 
 Settings.updateEndpoint = {
     url: 'https://popcorntime.re/',
