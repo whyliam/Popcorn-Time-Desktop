@@ -3,8 +3,8 @@
     "dependencies": {
         "marionette": "*",
         "bootstrap": "~3.3.6",
-        "video.js": "~5.3.0",
-        "videojs-youtube": "~2.0.3",
+        "video.js": "~4.11.4",
+        "videojs-youtube": "1.2.10",
         "mousetrap": "~1.5.3",
         "font-awesome": "~4.5.0"
     },
