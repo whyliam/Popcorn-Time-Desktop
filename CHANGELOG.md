@@ -133,7 +133,6 @@ New Features:
 
 After the introduction of the Remote Control API on 0.3.3,
 these remotes have been created by our awesome users go grab the one you
-like best at http://discuss.popcorntime.io/t/list-of-popcorn-time-remote-controls/2044
 
 - Now comes with release names
 - More resiliant to APIs falling down
@@ -152,7 +151,6 @@ like best at http://discuss.popcorntime.io/t/list-of-popcorn-time-remote-control
 - [ALPHA] ChromeCast now supports subtitles and cover images.
 
 ## 0.3.3 Beta - 12 sept 2014
-- Move to self-hosted repo, you can now find us at http://git.popcorntime.io
 - Use FontAwesome instead of PNG's: nicer sharper icons accross the ui
 - Get rid of white flash at startup.
 - Rethink Settings: much cleaner layout, separated in advanced.
