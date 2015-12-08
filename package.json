@@ -106,7 +106,7 @@
         "grunt-exec": "0.4.x",
         "grunt-githooks": "0.x.x",
         "grunt-jsbeautifier": "0.x.x",
-        "grunt-node-webkit-builder": "0.1.x",
+        "grunt-nw-builder": "*",
         "grunt-shell": "1.x.x",
         "load-grunt-tasks": "3.x.x",
         "nw-gyp": "0.x.x",
