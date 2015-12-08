@@ -1,10 +1,9 @@
-# [Popcorn Time](https://git.popcorntime.io/popcorntime/desktop/tree/master) ![](http://ww1.sinaimg.cn/thumbnail/48910e01gw1eypg05v4dkj20e80e8js3.jpg)
+# Popcorn Time
 
 Allow any computer user to watch movies easily streaming from torrents, without any particular knowledge.
 
-![Popcorn Time](./EoO0bc0.gif)
+![Popcorn Time](http://ww1.sinaimg.cn/thumbnail/48910e01gw1eypg05v4dkj20e80e8js3.jpg)
 
-Visit the project's website at <https://popcorntime.io>.
 
 ***
 
@@ -17,8 +16,6 @@ Want to report a bug, request a feature, contribute or translate Popcorn Time? C
 If you're comfortable getting up and running from a `git clone`, this method is for you.
 
 If you clone the GitLab repository, you will need to build a number of assets using grunt.
-
-The [master](https://git.popcorntime.io/popcorntime/desktop/tree/master) branch which contains the latest release.
 
 #### Quickstart:
 
@@ -46,11 +43,6 @@ Full instructions & troubleshooting tips can be found in the [Contributing Guide
 ## Community
 
 Keep track of Popcorn Time development and community activity.
-
-* Follow Popcorn Time on [Twitter](https://twitter.com/popcorntimetv), [Facebook](https://www.facebook.com/PopcornTimeTv) and [Google+](https://plus.google.com/+Getpopcorntime).
-* Read and subscribe to the [The Official Popcorn Time Blog](https://blog.popcorntime.io).
-* Join in discussions on the [Popcorn Time Forum](https://discuss.popcorntime.io)
-* Connect with us on IRC at `#popcorntime` on freenode ([web access](http://webchat.freenode.net/?channels=popcorntime))
 
 
 ## Versioning
@@ -80,7 +72,5 @@ This program is distributed in the hope that it will be useful, but WITHOUT ANY 
 You should have received a copy of the GNU General Public License along with this program.  If not, see http://www.gnu.org/licenses/ .
 
 ***
-
-If you want to contact us : [hello@popcorntime.io](mailto:hello@popcorntime.io)
  
 Copyright (c) 2015 Popcorn Time Foundation - Released under the [GPL v3 license](LICENSE.txt).
