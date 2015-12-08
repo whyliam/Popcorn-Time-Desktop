@@ -26,8 +26,7 @@ requests](#submitting-pull-requests), but please respect the following restricti
 * Please **search for existing issues**. Help us keep duplicate issues to a minimum by checking to see if someone
 has already reported your problem or requested your idea.
 
-* Please **do not** use the issue tracker for personal support requests (use
-  [the forum](http://discuss.popcorntime.io) or IRC - #popcorntime on freenode).
+* Please **do not** use the issue tracker for personal support requests.
 
 * Please **do not** derail or troll issues. Keep the discussion on topic and respect the opinions of others.
 
@@ -69,7 +68,6 @@ Any other information you want to share that is relevant to the issue being repo
 ### Technical details:
 
 * Popcorn Time Version: stable 0.3.7
-* Downloaded from: popcorntime.io
 * Connection: 10mbs
 * OS: MAC OSX
 ```
