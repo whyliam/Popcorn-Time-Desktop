@@ -293,13 +293,11 @@ module.exports = function (grunt) {
         shell: {
             themes: {
                 command: [
-                    'git submodule init',
                     'cd src/app/styl/third_party/',
                 ].join('&&')
             },
             language: {
                 command: [
-                    'git submodule init',
                     'cd src/app/language/',
                 ].join('&&')
             },
