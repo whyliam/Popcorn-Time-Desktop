@@ -66,7 +66,10 @@
         "underscore": "1.x.x",
         "upnp-mediarenderer-client": "1.x.x",
         "urijs": "*",
-        "xmlbuilder": "4.x.x"
+        "xmlbuilder": "4.x.x",
+        "crypto": "*",
+        "zlib": "*",
+        "path": "*"
     },
     "devDependencies": {
         "bower": "^1.x.x",
