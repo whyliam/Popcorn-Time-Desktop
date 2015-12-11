@@ -91,7 +91,7 @@ Priority: optional
 Architecture: $real_arch
 Installed-Size: $size
 Depends:
-Maintainer: Popcorn Time Official
+Maintainer: Popcorn Time Official <hello@popcorntime.io>
 Description: Popcorn Time
  Watch Movies and TV Shows instantly
 " > $cwd/$package_name/DEBIAN/control
@@ -99,10 +99,11 @@ Description: Popcorn Time
 #copyright
 echo "Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0
 Upstream-Name: Popcorn-Time
-Upstream-Contact: Popcorn Time Official
+Upstream-Contact: Popcorn Time Official <hello@popcorntime.io>
+Source: https://git.popcorntime.io
 
 Files: *
-Copyright: © 2015, Popcorn Time and the contributors
+Copyright: © 2015, Popcorn Time and the contributors <hello@popcorntime.io>
 License: GPL-3+
  This program is free software: you can redistribute it and/or modify
  it under the terms of the GNU General Public License as published by
