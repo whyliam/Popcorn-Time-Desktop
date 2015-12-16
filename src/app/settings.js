@@ -69,7 +69,7 @@ Settings.tvstAccessToken = '';
 Settings.connectionLimit = 100;
 Settings.dhtLimit = 500;
 Settings.streamPort = 0; // 0 = Random
-Settings.tmpLocation = path.join(os.tmpDir(), 'Popcorn-Time');
+Settings.tmpLocation = path.join(os.tmpDir(), 'Popcorn-Time-Community-Cache');
 Settings.databaseLocation = path.join(data_path, 'data');
 Settings.deleteTmpOnClose = true;
 Settings.automaticUpdating = true;
@@ -80,7 +80,7 @@ Settings.bigPicture = false;
 // Features
 Settings.activateTorrentCollection = true;
 Settings.activateWatchlist = true;
-Settings.activateVpn = true;
+Settings.activateVpn = false;
 Settings.activateRandomize = true;
 Settings.onlineSearchEngine = 'KAT';
 
@@ -96,8 +96,20 @@ Settings.vpnPassword = '';
 Settings.tvAPI = [{
     url: 'https://www.popcorntime.ws/api/eztv/',
     strictSSL: true
-}/*, {
+}, {
     url: 'https://popcornwvnbg7jev.onion.to/',
+    strictSSL: true
+}, {
+    url: 'https://popcorni33hocj37.onion.to/',
+    strictSSL: true
+}, {
+    url: 'https://ptapinjktqtsweq7.onion.to/',
+    strictSSL: true
+}, {
+    url: 'https://odgoglfi7uddahby.onion.to/',
+    strictSSL: true
+}/*, {
+    url: 'https://api.popcorntime.io/',
     strictSSL: true
 }, {
     url: 'http://tv.ytspt.re/',
@@ -124,21 +136,14 @@ Settings.ytsAPI = [{
 }*/];
 
 Settings.updateEndpoint = {
-    url: 'https://popcorntime.re/',
+    url: 'https://popcornbxexxf3bu.onion.to/',
     index: 0,
     proxies: [{
-        url: 'https://popcorntime.re/',
-        fingerprint: '30:A6:BA:6C:19:A4:D5:C3:5A:E8:F1:56:C6:B4:E1:DC:EF:DD:EC:8C',
+        url: 'https://popcornqbt6ktnfs.onion.to/'
+        // fingerprint: '30:A6:BA:6C:19:A4:D5:C3:5A:E8:F1:56:C6:B4:E1:DC:EF:DD:EC:8C',
     }, {
-        url: 'https://popcorntime.io/',
-        fingerprint: '30:A6:BA:6C:19:A4:D5:C3:5A:E8:F1:56:C6:B4:E1:DC:EF:DD:EC:8C'
-    }, {
-        url: 'https://popcorntime.cc/',
-        fingerprint: '30:A6:BA:6C:19:A4:D5:C3:5A:E8:F1:56:C6:B4:E1:DC:EF:DD:EC:8C'
-    }, {
-        url: 'https://its.pt/',
-        ssl: false,
-        fingerprint: /301/
+        url: 'https://popcornd6v5duho3.onion.to/'
+        // fingerprint: '30:A6:BA:6C:19:A4:D5:C3:5A:E8:F1:56:C6:B4:E1:DC:EF:DD:EC:8C'
     }]
 };
 
