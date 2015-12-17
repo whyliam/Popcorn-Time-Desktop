@@ -46,6 +46,20 @@ Unicode True
     !searchparse /file "../../package.json" '"name": "' DATA_FOLDER '",'
 !endif
 
+
+; ------------------- ;
+;    Architecture     ;
+; ------------------- ;
+;Default to detected platform build if 
+;not defined by -DARCH= argument
+!ifndef ARCH
+    !if /FILEEXISTS "..\..\build\${APP_NAME}\win64\*.*"
+        !define ARCH "win64"
+    !else
+        !define ARCH "win32"
+    !endif
+!endif
+
 ; ------------------- ;
 ;      Settings       ;
 ; ------------------- ;
