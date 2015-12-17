@@ -348,12 +348,22 @@
                         quality: args.quality,
                         type: args.type,
                         device: App.Device.Collection.selected
+                    };
+                    if (args.tvdb_id) {
+                        model.tvdb_id = args.tvdb_id;
                     }
-                    if (args.tvdb_id) { model.tvdb_id = args.tvdb_id; }
-                    if (args.season) { model.season = args.season; }
-                    if (args.episode) { model.episode = args.episode; }
-                    if (args.episode_id) { model.episode_id = args.episode_id; }
-                    if (args.epInfo) { model.extract_subtitle = args.epInfo; }
+                    if (args.season) {
+                        model.season = args.season;
+                    }
+                    if (args.episode) {
+                        model.episode = args.episode;
+                    }
+                    if (args.episode_id) {
+                        model.episode_id = args.episode_id;
+                    }
+                    if (args.epInfo) {
+                        model.extract_subtitle = args.epInfo;
+                    }
                     var torrentStart = new Backbone.Model(model);
                     App.vent.trigger('stream:start', torrentStart);
                     popcornCallback(callback);
