@@ -69,7 +69,7 @@ Settings.tvstAccessToken = '';
 Settings.connectionLimit = 100;
 Settings.dhtLimit = 500;
 Settings.streamPort = 0; // 0 = Random
-Settings.tmpLocation = path.join(os.tmpDir(), 'Popcorn-Time-Community-Cache');
+Settings.tmpLocation = path.join(os.tmpDir(), 'Popcorn-Time');
 Settings.databaseLocation = path.join(data_path, 'data');
 Settings.deleteTmpOnClose = true;
 Settings.automaticUpdating = true;
@@ -95,26 +95,11 @@ Settings.vpnPassword = '';
 
 Settings.tvAPI = [{
     url: 'https://www.popcorntime.ws/api/eztv/',
-    strictSSL: true
+    strictSSL: false
 }, {
     url: 'https://popcornwvnbg7jev.onion.to/',
-    strictSSL: true
-}, {
-    url: 'https://popcorni33hocj37.onion.to/',
-    strictSSL: true
-}, {
-    url: 'https://ptapinjktqtsweq7.onion.to/',
-    strictSSL: true
-}, {
-    url: 'https://odgoglfi7uddahby.onion.to/',
-    strictSSL: true
-}/*, {
-    url: 'https://api.popcorntime.io/',
-    strictSSL: true
-}, {
-    url: 'http://tv.ytspt.re/',
     strictSSL: false
-}*/];
+}];
 
 Settings.ytsAPI = [{
     uri: 'http://api.torrentsapi.com/',
