@@ -22,6 +22,9 @@ var parseBuildPlatforms = function (argumentPlatform) {
     // Do some scrubbing to make it easier to match in the regexes bellow
     inputPlatforms = inputPlatforms.replace("darwin", "mac");
     inputPlatforms = inputPlatforms.replace(/;ia|;x|;arm/, "");
+    if (process.arch === "x64" && argumentPlatform === "") {
+        inputPlatforms = inputPlatforms.replace("32", "64");
+    }
 
     var buildAll = /^all$/.test(inputPlatforms);
 
@@ -82,6 +85,7 @@ module.exports = function (grunt) {
         'nwjs',
         'shell:setexecutable'
     ]);
+
     grunt.registerTask('lang', ['shell:language']);
 
     grunt.registerTask('dist', [
@@ -220,7 +224,7 @@ module.exports = function (grunt) {
                 win64: buildPlatforms.win64,
                 linux32: buildPlatforms.linux32,
                 linux64: buildPlatforms.linux64,
-                download_url: 'http://tenet.dl.sourceforge.net/project/nodewebkit/'
+                download_url: 'http://dl.nwjs.io/'
             },
             src: ['./src/**', '!./src/app/styl/**',
                 './node_modules/**', '!./node_modules/bower/**',
@@ -258,7 +262,7 @@ module.exports = function (grunt) {
                 cmd: 'sh dist/mac/codesign.sh || echo "Codesign failed, likely caused by not being run on mac, continuing"'
             },
             createDmg: {
-                cmd: 'dist/mac/yoursway-create-dmg/create-dmg --volname "Popcorn Time ' + currentVersion + '" --background ./dist/mac/background.png --window-size 480 540 --icon-size 128 --app-drop-link 240 370 --icon "Popcorn-Time" 240 110 ./build/releases/Popcorn-Time/mac/Popcorn-Time-' + currentVersion + '-Mac.dmg ./build/releases/Popcorn-Time/mac/ || echo "Create dmg failed, likely caused by not being run on mac, continuing"'
+                cmd: 'dist/mac/yoursway-create-dmg/create-dmg --volname "' + projectName + '-' + currentVersion + '" --background ./dist/mac/background.png --window-size 480 540 --icon-size 128 --app-drop-link 240 370 --icon "' + projectName + '" 240 110 ./build/releases/' + projectName + '/mac/' + projectName + '-' + currentVersion + '-Mac.dmg ./build/releases/' + projectName + '/mac/ || echo "Create dmg failed, likely caused by not being run on mac, continuing"'
             },
             createWinInstall: {
                 cmd: 'makensis dist/windows/installer_makensis.nsi',

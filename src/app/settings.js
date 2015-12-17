@@ -94,56 +94,60 @@ Settings.vpnUsername = '';
 Settings.vpnPassword = '';
 
 Settings.tvAPI = [{
-    url: 'https://www.popcorntime.ws/api/eztv/',
-    strictSSL: true
-}, {
-    url: 'https://popcornwvnbg7jev.onion.to/',
-    strictSSL: true
-}, {
-    url: 'https://popcorni33hocj37.onion.to/',
-    strictSSL: true
-}, {
-    url: 'https://ptapinjktqtsweq7.onion.to/',
-    strictSSL: true
-}, {
-    url: 'https://odgoglfi7uddahby.onion.to/',
-    strictSSL: true
-}/*, {
-    url: 'https://api.popcorntime.io/',
-    strictSSL: true
-}, {
-    url: 'http://tv.ytspt.re/',
-    strictSSL: false
-}*/];
+        url: 'https://www.popcorntime.ws/api/eztv/',
+        strictSSL: true
+    }, {
+        url: 'https://popcornwvnbg7jev.onion.to/',
+        strictSSL: true
+    }, {
+        url: 'https://popcorni33hocj37.onion.to/',
+        strictSSL: true
+    }, {
+        url: 'https://ptapinjktqtsweq7.onion.to/',
+        strictSSL: true
+    }, {
+        url: 'https://odgoglfi7uddahby.onion.to/',
+        strictSSL: true
+    }
+    /*, {
+        url: 'https://api.popcorntime.io/',
+        strictSSL: true
+    }, {
+        url: 'http://tv.ytspt.re/',
+        strictSSL: false
+    }*/
+];
 
 Settings.ytsAPI = [{
-    uri: 'http://api.torrentsapi.com/',
-    strictSSL: false
-}/*, {
-    uri: 'https://cloudflare.com/',
-    headers: {
-        'Host': 'xor.image.yt',
-        'User-Agent': 'Mozilla/5.0 (Linux) AppleWebkit/534.30 (KHTML, like Gecko) PT/3.8.0'
-    },
-    strictSSL: true
-}, {
-    uri: 'http://cloudflare.com/',
-    headers: {
-        'Host': 'xor.image.yt',
-        'User-Agent': 'Mozilla/5.0 (Linux) AppleWebkit/534.30 (KHTML, like Gecko) PT/3.8.0'
-    },
-    strictSSL: false
-}*/];
+        uri: 'http://api.torrentsapi.com/',
+        strictSSL: false
+    }
+    /*, {
+        uri: 'https://cloudflare.com/',
+        headers: {
+            'Host': 'xor.image.yt',
+            'User-Agent': 'Mozilla/5.0 (Linux) AppleWebkit/534.30 (KHTML, like Gecko) PT/3.8.0'
+        },
+        strictSSL: true
+    }, {
+        uri: 'http://cloudflare.com/',
+        headers: {
+            'Host': 'xor.image.yt',
+            'User-Agent': 'Mozilla/5.0 (Linux) AppleWebkit/534.30 (KHTML, like Gecko) PT/3.8.0'
+        },
+        strictSSL: false
+    }*/
+];
 
 Settings.updateEndpoint = {
     url: 'https://popcornbxexxf3bu.onion.to/',
     index: 0,
     proxies: [{
         url: 'https://popcornqbt6ktnfs.onion.to/'
-        // fingerprint: '30:A6:BA:6C:19:A4:D5:C3:5A:E8:F1:56:C6:B4:E1:DC:EF:DD:EC:8C',
+            // fingerprint: '30:A6:BA:6C:19:A4:D5:C3:5A:E8:F1:56:C6:B4:E1:DC:EF:DD:EC:8C',
     }, {
         url: 'https://popcornd6v5duho3.onion.to/'
-        // fingerprint: '30:A6:BA:6C:19:A4:D5:C3:5A:E8:F1:56:C6:B4:E1:DC:EF:DD:EC:8C'
+            // fingerprint: '30:A6:BA:6C:19:A4:D5:C3:5A:E8:F1:56:C6:B4:E1:DC:EF:DD:EC:8C'
     }]
 };
 
