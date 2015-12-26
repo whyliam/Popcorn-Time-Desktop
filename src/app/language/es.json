@@ -403,9 +403,18 @@
     "Hide VPN from the filter bar": "Ocultar icono VPN de la barra de filtros",
     "Magnet link": "Enlace magnet",
     "Error resolving torrent.": "Error resolviendo torrent.",
-    "%s hour(s) remaining": "%s hora(s) restantes",
-    "%s minute(s) remaining": "%s minuto(s) restantes",
-    "%s second(s) remaining": "%s segundo(s) restantes",
+    "%d hour remaining": {
+		"one": "%d hora restante",
+		"other": "%d horas restantes"
+	},
+    "%d minute remaining": {
+		"one": "%d minuto restante",
+		"other": "%d minutos restantes"
+	},
+     "%d second remaining": {
+		"one": "%d segundo restante",
+		"other": "%d segundos restantes"
+	},
     "Unknown time remaining": "Tiempo restante desconocido",
     "Set player window to video resolution": "Ajustar ventana del reproductor a la resolución del vídeo",
     "Set player window to double of video resolution": "Ajustar ventana del reproductor al doble de la resolución del vídeo",
