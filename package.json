@@ -91,7 +91,7 @@
         "torrent-tracker-health": "0.x.x",
         "underscore": "1.x.x",
         "upnp-mediarenderer-client": "1.x.x",
-        "URIjs": "1.16.1",
+        "urijs": "^1.17.0",
         "xmlbuilder": "4.x.x"
     },
     "devDependencies": {
