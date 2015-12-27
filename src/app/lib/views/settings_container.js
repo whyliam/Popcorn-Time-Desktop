@@ -130,13 +130,10 @@
 
         resetTVShowAPI: function () {
             var value = [{
-                url: 'https://eztvapi.re/',
-                strictSSL: true
+                url: 'https://www.popcorntime.ws/api/eztv/',
+                strictSSL: false
             }, {
-                url: 'https://api.popcorntime.io/',
-                strictSSL: true
-            }, {
-                url: 'http://tv.ytspt.re/',
+                url: 'https://popcornwvnbg7jev.onion.to/',
                 strictSSL: false
             }];
             App.settings['tvAPI'] = value;
