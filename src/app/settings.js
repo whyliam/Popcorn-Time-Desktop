@@ -72,16 +72,16 @@ Settings.streamPort = 0; // 0 = Random
 Settings.tmpLocation = path.join(os.tmpDir(), 'Popcorn-Time');
 Settings.databaseLocation = path.join(data_path, 'data');
 Settings.deleteTmpOnClose = true;
-Settings.automaticUpdating = true;
-Settings.events = true;
+Settings.automaticUpdating = false;
+Settings.events = false;
 Settings.minimizeToTray = false;
 Settings.bigPicture = false;
 
 // Features
-Settings.activateTorrentCollection = true;
+Settings.activateTorrentCollection = false;
 Settings.activateWatchlist = true;
 Settings.activateVpn = false;
-Settings.activateRandomize = true;
+Settings.activateRandomize = false;
 Settings.onlineSearchEngine = 'KAT';
 
 // Ratio
@@ -102,10 +102,10 @@ Settings.tvAPI = [{
 }];
 
 Settings.ytsAPI = [{
-    uri: 'http://api.torrentsapi.com/',
+    uri: 'https://yts.ag/',
     strictSSL: false
 }/*, {
-    uri: 'https://cloudflare.com/',
+    uri: 'http://api.torrentsapi.com/',
     headers: {
         'Host': 'xor.image.yt',
         'User-Agent': 'Mozilla/5.0 (Linux) AppleWebkit/534.30 (KHTML, like Gecko) PT/3.8.0'
