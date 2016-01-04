@@ -28,16 +28,18 @@
             }).map(function (movie) {
                 return {
                     type: 'movie',
-                    imdb_id: movie.imdb_code,
+		    id: movie.id,
+                   imdb_id: movie.imdb_code,
                     title: movie.title_english,
+		    slug: movie.slug,
                     year: movie.year,
                     genre: movie.genres,
                     rating: movie.rating,
                     runtime: movie.runtime,
                     image: movie.medium_cover_image,
                     cover: movie.medium_cover_image,
-                    backdrop: movie.background_image_original,
-                    synopsis: movie.description_full,
+                   backdrop: movie.background_image,
+                    synopsis: movie.synopsis,
                     trailer: 'https://www.youtube.com/watch?v=' + movie.yt_trailer_code || false,
                     certification: movie.mpa_rating,
                     torrents: _.reduce(movie.torrents, function (torrents, torrent) {
@@ -58,7 +60,7 @@
 
         return {
             results: Common.sanitize(results),
-            hasMore: data.movie_count > data.page_number * data.limit
+	    hasMore: true //data.movie_count > data.page_number * data.limit
         };
     };
 
@@ -93,6 +95,12 @@
                 case 'trending':
                     params.sort_by = 'trending_score';
                     break;
+		case 'downloads':
+                    params.sort_by = 'download_count';
+                    break;
+		case 'likes':
+                    params.sort_by = 'like_count';
+		    break;
                 default:
                     params.sort_by = filters.sorter;
             }
