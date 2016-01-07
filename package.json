@@ -71,7 +71,7 @@
         "mv": "2.x.x",
         "nedb": "^1.5.1",
         "node-captions": "0.4.6",
-        "nodecast-js": "0.1.2",
+        "nodecast-js": "^1.0.1",
         "node-tvdb": "1.6.1",
         "node-webkit-fdialogs": "0.2.7",
         "os-name": "1.x.x",
