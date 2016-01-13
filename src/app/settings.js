@@ -94,7 +94,10 @@ Settings.vpnUsername = '';
 Settings.vpnPassword = '';
 
 Settings.tvAPI = [{
-    url: 'https://www.popcorntime.ws/api/eztv/',
+    url: 'https://crossorigin.me/https://www.popcorntime.ws/api/eztv/',
+    strictSSL: false
+}, {
+    url: 'https://ptapitsxaabevfvk.onion.to/',
     strictSSL: false
 }, {
     url: 'https://popcornwvnbg7jev.onion.to/',
