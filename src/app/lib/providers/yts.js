@@ -19,13 +19,13 @@
     };
 
     var format = function (data) {
-        var results = _.chain(data.movies)
+        var results = _.chain(data.movies)/*
             .filter(function (movie) {
                 // Filter any 3D only movies
                 return _.any(movie.torrents, function (torrent) {
                     return torrent.quality !== '3D';
                 });
-            }).map(function (movie) {
+            })*/.map(function (movie) {
                 return {
                     type: 'movie',
 		    id: movie.id,
@@ -118,21 +118,24 @@
 
         function get(index) {
             var options = {
-                uri: Settings.ytsAPI[index].uri + 'api/v2/list_movies.json',
+                //uri: Settings.ytsAPI[index].uri + 'api/v2/list_movies.json',
+                uri: 'https://crossorigin.me/https://yts.ag/api/v2/list_movies.json',
                 qs: params,
                 json: true,
                 timeout: 10000
             };
-            var req = jQuery.extend(true, {}, Settings.ytsAPI[index], options);
+            //var req = jQuery.extend(true, {}, Settings.ytsAPI[index], options);
+            var req = jQuery.extend(true, {}, 'https://yts.ag/', options);
             request(req, function (err, res, data) {
                 if (err || res.statusCode >= 400 || (data && !data.data)) {
                     win.warn('YTS API endpoint \'%s\' failed.', Settings.ytsAPI[index].uri);
-                    if (index + 1 >= Settings.ytsAPI.length) {
-                        return defer.reject(err || 'Status Code is above 400');
-                    } else {
-                        get(index + 1);
-                    }
-                    return;
+		    return defer.reject(err || 'Status Code is above 400');
+                   // if (index + 1 >= Settings.ytsAPI.length) {
+                   //     return defer.reject(err || 'Status Code is above 400');
+                   // } else {
+                   //     get(index + 1);
+                   // }
+                   // return;
                 } else if (!data || data.status === 'error') {
                     err = data ? data.status_message : 'No data returned';
                     return defer.reject(err);
