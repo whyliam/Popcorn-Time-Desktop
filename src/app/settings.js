@@ -78,7 +78,7 @@ Settings.minimizeToTray = false;
 Settings.bigPicture = false;
 
 // Features
-Settings.activateTorrentCollection = false;
+Settings.activateTorrentCollection = true;
 Settings.activateWatchlist = true;
 Settings.activateVpn = false;
 Settings.activateRandomize = false;
