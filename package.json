@@ -84,7 +84,7 @@
         "rimraf": "^2.5.0",
         "sanitizer": "0.x.x",
         "semver": "5.x.x",
-        "send": "0.13.0",
+        "send": "^0.13.1",
         "strike-api": "0.2.0",
         "tar": "2.x.x",
         "temp": "0.x.x",
@@ -92,7 +92,7 @@
         "underscore": "1.x.x",
         "upnp-mediarenderer-client": "1.x.x",
         "urijs": "^1.17.0",
-        "xmlbuilder": "4.x.x"
+        "xmlbuilder": "^4.2.1"
     },
     "devDependencies": {
         "bower": "^1.x.x",
