@@ -95,13 +95,13 @@
         "xmlbuilder": "^4.2.1"
     },
     "devDependencies": {
-        "bower": "^1.x.x",
+        "bower": "^1.7.3",
         "grunt": "^0.x.x",
         "grunt-bower-clean": "0.x.x",
         "grunt-contrib-clean": "0.x.x",
         "grunt-contrib-compress": "0.x.x",
         "grunt-contrib-jshint": "0.x.x",
-        "grunt-contrib-stylus": "0.21.0",
+        "grunt-contrib-stylus": "^1.0.0",
         "grunt-contrib-watch": "0.6.x",
         "grunt-exec": "0.4.x",
         "grunt-githooks": "0.x.x",
