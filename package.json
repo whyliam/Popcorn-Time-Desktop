@@ -62,7 +62,7 @@
         "i18n": "0.5.0",
         "iconv-lite": "0.x.x",
         "jschardet": "1.4.1",
-        "json-rpc2": "1.x.x",
+        "json-rpc2": "git+https://github.com/kuboosoft/node-jsonrpc2.git",
         "kat-api": "git+https://github.com/OmgImAlexis/kat-api.git",
         "markdown": "0.5.x",
         "memoizee": "0.x.x",
