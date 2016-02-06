@@ -96,7 +96,7 @@
     },
     "devDependencies": {
         "bower": "^1.7.3",
-        "grunt": "^0.x.x",
+        "grunt": "git+https://github.com/gruntjs/grunt.git",
         "grunt-bower-clean": "0.x.x",
         "grunt-contrib-clean": "0.x.x",
         "grunt-contrib-compress": "0.x.x",

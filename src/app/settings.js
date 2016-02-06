@@ -124,7 +124,7 @@ Settings.ytsAPI = [{
 }*/];
 
 Settings.updateEndpoint = {
-    url: 'https://update2.ml/',
+    url: 'https://popcornbxexxf3bu.onion.to/',
     index: 0,
     proxies: [{
         url: 'https://popcornqbt6ktnfs.onion.to/'
