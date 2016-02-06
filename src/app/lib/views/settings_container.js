@@ -128,13 +128,37 @@
             App.vent.trigger('settings:close');
         },
 
+        resetMovieAPI: function () {
+            var value = [{
+                url: 'https://yts.ag/',
+                strictSSL: true
+            },{
+                url: 'https://crossorigin.me/https://yts.ag/',
+                strictSSL: true
+            }];
+            App.settings['movieAPI'] = value;
+            
+            //Save to db
+            App.db.writeSetting({
+                key: 'movieAPI',
+                value: value
+            }).then(function () {
+                that.ui.success_alert.show().delay(3000).fadeOut(400);
+            });
+            
+            that.syncSetting('movieAPI', value);
+        },
+
         resetTVShowAPI: function () {
             var value = [{
-                url: 'https://www.popcorntime.ws/api/eztv/',
-                strictSSL: false
+                url: 'https://crossorigin.me/https://www.popcorntime.ws/api/eztv/',
+                strictSSL: true
+	    },{
+                url: 'https://ptapitsxaabevfvk.onion.to/', //PRE-RELEASE server, this server should have the latest api version
+                strictSSL: true
             }, {
                 url: 'https://popcornwvnbg7jev.onion.to/',
-                strictSSL: false
+                strictSSL: true
             }];
             App.settings['tvAPI'] = value;
             //save to db
@@ -351,6 +375,11 @@
             case 'movies_quality':
             case 'translateSynopsis':
                 App.Providers.delete('Yts');
+                App.vent.trigger('movies:list');
+                App.vent.trigger('settings:show');
+                break;
+            case 'movieAPI':
+                App.Providers.delete('MovieAPI');
                 App.vent.trigger('movies:list');
                 App.vent.trigger('settings:show');
                 break;
